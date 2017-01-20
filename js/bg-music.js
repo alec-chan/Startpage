@@ -12,7 +12,11 @@
     icon.class="fa fa-volume-off fa-lg";
     video.mute();
   }
-  
+  else if(cookie == ""){
+    setCookie("mute", "false", 100);
+    icon.class="fa fa-volume-up fa-lg";
+  }
+
   toggle = document.getElementById("bg-toggle");
   toggle.onclick = function(){
     if(cookie == "false"){
