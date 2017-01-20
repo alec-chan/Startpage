@@ -31,7 +31,7 @@ window.onload = function() {
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('yt', {
+        player = new YT.Player('player', {
           height: '1',
           width: '1',
           videoId: 'VhXP8RC_v9I',
@@ -78,13 +78,13 @@ function toggleBtn(state){
   var icon = document.getElementById("icon");
   if(state==true){
     setCookie("mute", "true", 100);
-    icon.class="fa fa-volume-off fa-lg";
+    icon.className="fa fa-volume-off fa-lg";
     muteVideo();
     console.log(cookie);
   }
   else if(state==false) {
     setCookie("mute", "false", 100);
-    icon.class="fa fa-volume-up fa-lg";
+    icon.className="fa fa-volume-up fa-lg";
     unMuteVideo();
     console.log(cookie);
   }
