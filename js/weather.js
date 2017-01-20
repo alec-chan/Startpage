@@ -1,8 +1,8 @@
 (function() {
   $.simpleWeather({
-    location: 'Molina de Segura, Murcia',
+    location: 'Seattle, WA',
     woeid: '',
-    unit: 'c',
+    unit: 'f',
     success: function(weather) {
       var temp = '<h2 class="title">' + weather.temp + '&deg;' +
                  weather.units.temp + '</h2>',
