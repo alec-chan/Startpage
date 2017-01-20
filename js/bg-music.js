@@ -23,10 +23,6 @@
           videoId: 'VhXP8RC_v9I',
           events: {
             'onReady': onPlayerReady
-          },
-          playerVars: {
-            'autoplay': 1
-            'start': 60
           }
         });
       }
