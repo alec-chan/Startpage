@@ -19,15 +19,18 @@
 
   toggle = document.getElementById("bg-toggle");
   toggle.onclick = function(){
-    if(cookie == "false"){
+    var cookiee = getCookie("mute");
+    var videoo = iframe.getElementById("yt");
+    var iconn = document.getElementById("icon");
+    if(cookiee == "false"){
       setCookie("mute", "true", 100);
-      icon.class="fa fa-volume-off fa-lg";
-      video.mute();
+      iconn.class="fa fa-volume-off fa-lg";
+      videoo.mute();
     }
-    else if(cookie=="true"){
+    else if(cookiee=="true"){
       setCookie("mute", "false", 100);
-      icon.class="fa fa-volume-up fa-lg";
-      video.unMute();
+      iconn.class="fa fa-volume-up fa-lg";
+      videoo.unMute();
     }
   };
 
