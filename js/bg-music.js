@@ -23,7 +23,7 @@
           videoId: 'VhXP8RC_v9I',
           events: {
             'onReady': onPlayerReady
-          }
+          } //no error now
         });
       }
 
