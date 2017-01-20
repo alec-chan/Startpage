@@ -27,7 +27,7 @@
         });
       }
 
-      // 4. The API will call this function when the video player is ready.
+      // 4. The API will call this function when the video player is ready. =autoplay
       function onPlayerReady(event) {
         event.target.playVideo();
       }
